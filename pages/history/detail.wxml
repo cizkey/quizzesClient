@@ -1,0 +1,138 @@
+<!--pages/history/detail.wxml-->
+<import src="../../libs/wxParse/wxParse.wxml" />
+<view class='container'>
+  <view class='header'>
+    <view class='date'>2018.05.12</view>
+    <view class='right'>
+      <text>4道题</text>
+      <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+    </view>
+  </view>
+  <view class='subject-list'>
+    <view class='subject-item'>
+      <view class='subject-question'>
+        <template is="wxParse" data="{{wxParseData:question.nodes}}" />
+      </view>
+      <view class='subject-answer'>
+        <view class='answer'>A.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>B我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>C.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>D.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+      </view>
+      <view class='subject-result'>
+        <view class='checked'>
+          <view class='correct'>正确答案：
+            <text class='strong'>ABCD</text>
+          </view>
+          <view class='you'>您的答案：
+            <text class='strong'> A</text>
+          </view>
+        </view>
+        <view class='analysis'>
+          <text class='strong'>【答案解析】</text>答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析
+        </view>
+        <view class='point'><text class='strong'>【考点】</text>考点考点考点考点考点考点考点考点</view>
+      </view>
+    </view>
+    <view class='subject-item'>
+      <view class='subject-question'>
+        <template is="wxParse" data="{{wxParseData:question.nodes}}" />
+      </view>
+      <view class='subject-answer'>
+        <view class='answer'>A.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>B我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>C.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>D.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+      </view>
+      <view class='subject-result'>
+        <view class='checked'>
+          <view class='correct'>正确答案：
+            <text class='strong'>ABCD</text>
+          </view>
+          <view class='you'>您的答案：
+            <text class='strong'> A</text>
+          </view>
+        </view>
+        <view class='analysis'>
+          <text class='strong'>【答案解析】</text>答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析
+        </view>
+        <view class='point'><text class='strong'>【考点】</text>考点考点考点考点考点考点考点考点</view>
+      </view>
+    </view>
+    <view class='subject-item'>
+      <view class='subject-question'>
+        <template is="wxParse" data="{{wxParseData:question.nodes}}" />
+      </view>
+      <view class='subject-answer'>
+        <view class='answer'>A.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>B我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>C.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>D.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+      </view>
+      <view class='subject-result'>
+        <view class='checked'>
+          <view class='correct'>正确答案：
+            <text class='strong'>ABCD</text>
+          </view>
+          <view class='you'>您的答案：
+            <text class='strong'> A</text>
+          </view>
+        </view>
+        <view class='analysis'>
+          <text class='strong'>【答案解析】</text>答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析
+        </view>
+        <view class='point'><text class='strong'>【考点】</text>考点考点考点考点考点考点考点考点</view>
+      </view>
+    </view>
+    <view class='subject-item'>
+      <view class='subject-question'>
+        <template is="wxParse" data="{{wxParseData:question.nodes}}" />
+      </view>
+      <view class='subject-answer'>
+        <view class='answer'>A.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>B我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>C.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>D.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+      </view>
+      <view class='subject-result'>
+        <view class='checked'>
+          <view class='correct'>正确答案：
+            <text class='strong'>ABCD</text>
+          </view>
+          <view class='you'>您的答案：
+            <text class='strong'> A</text>
+          </view>
+        </view>
+        <view class='analysis'>
+          <text class='strong'>【答案解析】</text>答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析
+        </view>
+        <view class='point'><text class='strong'>【考点】</text>考点考点考点考点考点考点考点考点</view>
+      </view>
+    </view>
+    <view class='subject-item'>
+      <view class='subject-question'>
+        <template is="wxParse" data="{{wxParseData:question.nodes}}" />
+      </view>
+      <view class='subject-answer'>
+        <view class='answer'>A.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>B我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>C.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+        <view class='answer'>D.我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项我是选项</view>
+      </view>
+      <view class='subject-result'>
+        <view class='checked'>
+          <view class='correct'>正确答案：
+            <text class='strong'>ABCD</text>
+          </view>
+          <view class='you'>您的答案：
+            <text class='strong'> A</text>
+          </view>
+        </view>
+        <view class='analysis'>
+          <text class='strong'>【答案解析】</text>答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析答案解析
+        </view>
+        <view class='point'><text class='strong'>【考点】</text>考点考点考点考点考点考点考点考点</view>
+      </view>
+    </view>
+  </view>
+</view>

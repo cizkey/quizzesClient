@@ -1,0 +1,48 @@
+<view class="wrapper">
+    <view class="bg"><image src="{{imgPath}}/images/skin/join/join-bg.jpg"></image></view>
+    <view class="content">
+        <view class="join-btn"><image src="{{imgPath}}/images/skin/join/join-btn.png"></image></view>
+        <view class="study">CPA学习小组</view>
+        <view class="content-ul clearfix">
+            <view class="item fl">
+                <view class="h4">
+                    <view class="item-icon"><image src="{{imgPath}}/images/skin/join/join-icon1.png"></image></view>
+                    <text>督促学习</text>
+                </view>
+                <view class="item-content">
+                    官方每日学习进度、学习时长打卡监督，定期清除懒虫考友，帮助你结识最优决心的考友相互激励
+                </view>
+            </view>
+
+            <view class="item fr">
+                <view class="h4">
+                    <view class="item-icon"><image src="{{imgPath}}/images/skin/join/join-icon1.png"></image></view>
+                    <text>权威资料</text>
+                </view>
+                <view class="item-content">
+                    发放历年CPA考试真题，电子版教材、课件、讲义等，不定期全真模考
+                </view>
+            </view>
+
+            <view class="item fl">
+                <view class="h4">
+                    <view class="item-icon"><image src="{{imgPath}}/images/skin/join/join-icon1.png"></image></view>
+                    <text>系统性学习方法</text>
+                </view>
+                <view class="item-content">
+                    教授如何利用思维导图、番茄学习法、记忆周期理论提升2倍学习力
+                </view>
+            </view>
+
+            <view class="item fr">
+                <view class="h4">
+                    <view class="item-icon"><image src="{{imgPath}}/images/skin/join/join-icon1.png"></image></view>
+                    <text>每周奖励</text>
+                </view>
+                <view class="item-content">
+                    每周坚持学习五天的考友，将获得学习奖励
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

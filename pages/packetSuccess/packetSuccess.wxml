@@ -1,0 +1,10 @@
+<view class="wrapper">
+    <view class="center">
+        <view class="success">
+            <image src="{{imgPath}}/images/skin/packet/complete.png"></image>
+        </view>
+        <view class="success-tip">操作成功</view>
+        <view class="success-tip2">红包已发送到您的账户,您可在首页提现哟</view>
+    </view>
+    <button class="btn" bindtap="clipboard" hover-class="button-hover">复制微信号</button>
+</view>

@@ -1,0 +1,41 @@
+<view class="wrapper">
+    <view class="bg-blue"><image src="{{imgPath}}/images/skin/packet/bg_lightblue.png"></image></view>
+    <view class="card">
+        <view class="common-list">
+            <image src="{{imgPath}}/images/skin/packet/icon1.png"></image>
+            <text>您的红包</text>
+        </view>
+        <view class="packet-num">¥60.00</view>
+        <view class="common-list">
+            <image src="{{imgPath}}/images/skin/packet/icon2.png"></image>
+            <text>提现手机号</text>
+            <text class="phone">1890290018</text>
+            <view class="edi fr"><navigator url="/pages/datum/datum">去修改</navigator></view>
+        </view>
+        <view class="common-list">
+            <image src="{{imgPath}}/images/skin/packet/icon1.png"></image>
+            <text>提现微信号</text>
+            <text class="wechat">linply</text>
+        </view>
+    </view>
+    <view class="tx">
+        <image src="{{imgPath}}/images/skin/packet/tx-btn.png"></image>
+    </view>
+    <view class="tips">
+        <view class="h4">红包获取规则</view>
+        <view class="tips-ul">
+            <view class="tips-item">邀请好友(新用户）与自己进行好友PK，均答对三道题时， 双方随即获得1-20元红包</view>
+            <view class="tips-item">与同一好友PK，只能获得一次红包</view>
+            <view class="tips-item">单用户可获得的红包不超过110元</view>
+        </view>
+    </view>
+    <view class="tips">
+        <view class="h4">红包提现规则</view>
+        <view class="tips-ul">
+            <view class="tips-item">在【答题竞技模式】中胜利三场</view>
+            <view class="tips-item">必须是备考【CPA】的考生</view>
+            <view class="tips-item">满20元现金后方可提现</view>
+            <view class="tips-item">与官方微信【zxcomc】联系提现</view>
+        </view>
+    </view>
+</view>

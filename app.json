@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/league/league",
+    "pages/rank/rank",
+    "pages/fight/fight",
+    "pages/battle/battle",
+    "pages/joincpa/index",
+    "pages/packetWithdraw/index",
+    "pages/squadron/squadron",
+    "pages/datumSuccess/datumSuccess",
+    "pages/datum/datum",
+    "pages/packetSuccess/packetSuccess",
+    "pages/packet/packet",
+    "pages/history/index",
+    "pages/history/detail"
+  ],
+  "window": {
+    "backgroundColor": "#487BF0",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#487BF0",
+    "navigationBarTitleText": "CPA答题联赛小程序",
+    "navigationBarTextStyle": "white"
+  }
+}

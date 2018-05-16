@@ -1,0 +1,124 @@
+<!--pages/history/index.wxml-->
+<view class='container'>
+  <view class='user-box'>
+    <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+    <view class='username'>{{userInfo.nickName}}</view>
+    <view class='usermotto'>书山有路勤为径 学海无涯苦作舟</view>
+  </view>
+  <view class='subject-box'>
+    <view class='subject-title'>
+      <view class='line'></view>
+      <view class='title'>共108道错题</view>
+    </view>
+    <view class='subject-list'>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+      <view class='subject-item'>
+        <navigator hover-class='none' open-type='navigate' url='/pages/history/detail?id=1'>
+          <view class='date'>2018.05.12</view>
+          <view class='right'>
+            <text>4道题</text>
+            <image src='{{imgPath}}/images/skin/home/next.png' class='next'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

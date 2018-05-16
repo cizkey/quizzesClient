@@ -1,0 +1,80 @@
+/* pages/history/detail.wxss */
+
+page {
+  background: #fff;
+}
+
+.container {
+}
+
+.header {
+  padding: 0 40rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5f0ff;
+}
+
+.header .date {
+  font-size: 30rpx;
+  color: #666;
+}
+
+.header .right {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #3a3c3f;
+}
+
+.header .right .next {
+  margin-left: 30rpx;
+  width: 14rpx;
+  height: 24rpx;
+}
+.subject-item{
+  padding-top: 54rpx;
+}
+.subject-question{
+  font-size: 28rpx;
+  line-height: 36rpx;
+  color: #333333;
+  padding: 0 40rpx;
+}
+.subject-question image{
+  max-width: 100%;
+}
+.subject-answer{
+  font-size: 26rpx;
+  color: #666666;
+  line-height: 36rpx;
+  padding: 20rpx 40rpx;
+}
+.subject-answer .answer{
+  margin-top: 30rpx;
+}
+.subject-result{
+  margin-top: 10rpx;
+  background-color: #e5f0ff;
+  padding: 26rpx 40rpx;
+   font-size: 28rpx;
+   line-height: 36rpx;
+}
+.subject-result .strong{
+  color: #487bf0;
+}
+.checked{
+  display: flex;
+  flex-direction: row;
+ 
+}
+.checked .you{
+  margin-left: 20rpx;
+}
+.analysis,.point{
+  margin-top: 22rpx;
+}

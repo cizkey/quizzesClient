@@ -1,0 +1,93 @@
+<!--pages/battle/battle.wxml-->
+<view class=' container'>
+  <view class='battle-list' wx:if='{{mode==0}}'>
+    <view class='battle-item'>
+      <navigator hover-class='none' url='/pages/fight/fight' open-type='navigate'>
+        <view class='subject'>会计</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_kj.png'></image>
+      </navigator>
+    </view>
+    <view class='battle-item'>
+      <navigator hover-class='none' url='/pages/fight/fight' open-type='navigate'>
+      <view class='subject'>审计</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_sj.png'></image>
+      </navigator>
+    </view>
+    <view class='battle-item'>
+      <navigator hover-class='none' url='/pages/fight/fight' open-type='navigate'>
+       <view class='subject'>财务成本管理</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_cw.png'></image>
+      </navigator>
+    </view>
+    <view class='battle-item'>
+      <navigator hover-class='none' url='/pages/fight/fight' open-type='navigate'>
+       <view class='subject'>经济法</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_jj.png'></image>
+      </navigator>
+    </view>
+    <view class='battle-item'>
+      <navigator hover-class='none' url='/pages/fight/fight' open-type='navigate'>
+       <view class='subject'>税法</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_sf.png'></image>
+      </navigator>
+    </view>
+    <view class='battle-item'>
+      <navigator hover-class='none' url='/pages/fight/fight' open-type='navigate'>
+       <view class='subject'>审计</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_zn.png'></image>
+      </navigator>
+    </view>
+    <view class='battle-item'>
+      <view class='mask'>尚未开放</view>
+       <view class='subject'>公司战略</view>
+      <!-- <navigator hover-class='none' url='/pages/fight/fight' open-type='navigate'> -->
+      <image src='{{imgPath}}/images/skin/battle/bat_zn.png'></image>
+      <!-- </navigator> -->
+    </view>
+  </view>
+   <view class='battle-list' wx:else>
+    <view class='battle-item'>
+      <button open-type='share'>
+        <view class='subject'>会计</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_kj.png'></image>
+      </button>
+    </view>
+    <view class='battle-item'>
+      <button open-type='share'>
+      <view class='subject'>审计</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_sj.png'></image>
+      </button>
+    </view>
+    <view class='battle-item'>
+      <button open-type='share'>
+       <view class='subject'>财务成本管理</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_cw.png'></image>
+      </button>
+    </view>
+    <view class='battle-item'>
+      <button open-type='share'>
+       <view class='subject'>经济法</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_jj.png'></image>
+      </button>
+    </view>
+    <view class='battle-item'>
+      <button open-type='share'>
+       <view class='subject'>税法</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_sf.png'></image>
+      </button>
+    </view>
+    <view class='battle-item'>
+      <button open-type='share'>
+       <view class='subject'>审计</view>
+        <image src='{{imgPath}}/images/skin/battle/bat_zn.png'></image>
+      </button>
+    </view>
+    <view class='battle-item'>
+      <view class='mask'>尚未开放</view>
+       <view class='subject'>公司战略</view>
+      <!-- <navigator hover-class='none' url='/pages/fight/fight' open-type='navigate'> -->
+      <image src='{{imgPath}}/images/skin/battle/bat_zn.png'></image>
+      <!-- </navigator> -->
+    </view>
+  </view>
+</view>

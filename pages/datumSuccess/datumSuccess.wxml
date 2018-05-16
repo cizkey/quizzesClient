@@ -1,0 +1,64 @@
+<view class="wrapper">
+    <view class="center">
+        <view class="success">
+            <image src="{{imgPath}}/images/skin/packet/complete.png"></image>
+        </view>
+        <view class="success-tip">操作成功</view>
+        <view class="success-tip2">
+            <view> 我们将尽快联系您，您也可以主动添加微信</view>
+            <view><text class="tip-in">xxxnnn</text>,主动领取资料</view>
+        </view>
+    </view>
+    <button class="btn" bindtap="clipboard" hover-class="button-hover">复制微信号</button>
+    <button class="btn2" bindtap="slideUp" hover-class="button-hover">继续挑战</button>
+</view>
+<view class="pop-wrapper {{popShow?'popShow':'popHide'}}">
+    <view class="pop">
+
+        <view class="pop-body zoomInStar" style="display: none;">
+            <view class="bg-light"><image src="{{imgPath}}/images/skin/packet/biaslight.png"></image></view>
+            <view class="bg-star"><image src="{{imgPath}}/images/skin/packet/fiveStar.png"></image></view>
+            <view class="bg-main">
+                <image src="{{imgPath}}/images/skin/packet/totem.png"></image>
+                <text>连胜999场</text>
+            </view>
+            <view class="three-star">
+                <image class="one-img" src="{{imgPath}}/images/skin/packet/star.png"></image>
+                <image class="two-img" src="{{imgPath}}/images/skin/packet/star.png"></image>
+                <image class="three-img" src="{{imgPath}}/images/skin/packet/star.png"></image>
+            </view>
+            <view class="flaunt-btn flauntAnimate"><image class="three-img" src="{{imgPath}}/images/skin/packet/flaunt.png"></image></view>
+        </view>
+
+        <view class="pop-packet {{getPacket?'animateHide':''}}" wx:if="{{getPacket}}">
+            <view class="pop-packet-img">
+                <image class="three-img" src="{{imgPath}}/images/skin/packet/packet.png"></image>
+            </view>
+            <view class="text">
+                <view class="v1">恭喜您获得</view>
+                <view class="v2">
+                    <text class="t1">2.99</text>
+                    <text class="t2">元</text>
+                </view>
+            </view>
+            <view class="get-packet" bindtap="getPacket">领</view>
+            <view class="packet-tips">
+                <view>与微信好友(新用户）PK </view>
+                <view>均答对3道题双方获得随机红包</view>
+            </view>
+        </view>
+        <view wx:else class="pop-packet-get {{!getPacket?'animateShow':''}}">
+            <view class="pop-packet-img">
+                <image class="three-img" src="{{imgPath}}/images/skin/packet/packetGet.png"></image>
+            </view>
+            <view class="packet-tips">
+                <view>与微信好友(新用户）PK </view>
+                <view>均答对3道题双方获得随机红包</view>
+            </view>
+        </view>
+
+        <view class="pop-close" bindtap="slideDown">
+            <image src="{{imgPath}}/images/skin/packet/close.png"></image>
+        </view>
+    </view>
+</view>

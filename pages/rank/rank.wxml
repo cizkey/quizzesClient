@@ -1,0 +1,167 @@
+<!--pages/rank/ranl.wxml-->
+<view class='container' style='background:#fff url({{imgPath}}/images/skin/rank/bac.png) top center no-repeat;background-size:750rpx 270rpx;'>
+  <view class='rank-box' style='background:url({{imgPath}}/images/skin/rank/rank_title.png) top center no-repeat;background-size:710rpx 291rpx;'>
+    <view class='top'>
+      <view class='title'>CPA答题联赛王者榜</view>
+      <view class='notice'>榜单每小时更新一次</view>
+    </view>
+    <view class='tab-nav'>
+      <view class='nav cur'>个人榜单</view>
+      <view class='nav'>战队榜单</view>
+    </view>
+    <view class='scroll-box'>
+      <scroll-view scroll-y>
+        <view class='rank-list'>
+          <view class='rank-item'>
+            <view class='sort-box'>
+              <image src='{{imgPath}}/images/skin/rank/r1.png' class='sort'></image>
+            </view>
+            <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+            <view class='username'>{{userInfo.nickName}}</view>
+            <view class='victory'>
+              <text class='h4'>总胜局</text>
+              <view class='count'>
+                <image src='{{imgPath}}/images/skin/rank/star.png' class='star'></image>
+                <text class='txt'>318800</text>
+              </view>
+            </view>
+          </view>
+          <view class='rank-item'>
+            <view class='sort-box'>
+              <image src='{{imgPath}}/images/skin/rank/r2.png' class='sort'></image>
+            </view>
+            <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+            <view class='username'>{{userInfo.nickName}}</view>
+            <view class='victory'>
+              <text class='h4'>总胜局</text>
+              <view class='count'>
+                <image src='{{imgPath}}/images/skin/rank/star.png' class='star'></image>
+                <text class='txt'>3188</text>
+              </view>
+            </view>
+          </view>
+          <view class='rank-item'>
+            <view class='sort-box'>
+              <image src='{{imgPath}}/images/skin/rank/r3.png' class='sort'></image>
+            </view>
+            <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+            <view class='username'>{{userInfo.nickName}}</view>
+            <view class='victory'>
+              <text class='h4'>总胜局</text>
+              <view class='count'>
+                <image src='{{imgPath}}/images/skin/rank/star.png' class='star'></image>
+                <text class='txt'>3188</text>
+              </view>
+            </view>
+          </view>
+          <view class='rank-item'>
+            <view class='sort-box'>
+              <text class='num'>4</text>
+            </view>
+            <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+            <view class='username'>{{userInfo.nickName}}</view>
+            <view class='victory'>
+              <text class='h4'>总胜局</text>
+              <view class='count'>
+                <image src='{{imgPath}}/images/skin/rank/star.png' class='star'></image>
+                <text class='txt'>3188</text>
+              </view>
+            </view>
+          </view>
+          <view class='rank-item'>
+            <view class='sort-box'>
+              <text class='num'>5</text>
+            </view>
+            <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+            <view class='username'>{{userInfo.nickName}}</view>
+            <view class='victory'>
+              <text class='h4'>总胜局</text>
+              <view class='count'>
+                <image src='{{imgPath}}/images/skin/rank/star.png' class='star'></image>
+                <text class='txt'>3188</text>
+              </view>
+            </view>
+          </view>
+          <view class='rank-item'>
+            <view class='sort-box'>
+              <text class='num'>6</text>
+            </view>
+            <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+            <view class='username'>{{userInfo.nickName}}</view>
+            <view class='victory'>
+              <text class='h4'>总胜局</text>
+              <view class='count'>
+                <image src='{{imgPath}}/images/skin/rank/star.png' class='star'></image>
+                <text class='txt'>3188</text>
+              </view>
+            </view>
+          </view>
+          <view class='rank-item'>
+            <view class='sort-box'>
+              <text class='num'>7</text>
+            </view>
+            <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+            <view class='username'>{{userInfo.nickName}}</view>
+            <view class='victory'>
+              <text class='h4'>总胜局</text>
+              <view class='count'>
+                <image src='{{imgPath}}/images/skin/rank/star.png' class='star'></image>
+                <text class='txt'>3188</text>
+              </view>
+            </view>
+          </view>
+          <view class='rank-item'>
+            <view class='sort-box'>
+              <text class='num'>8</text>
+            </view>
+            <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+            <view class='username'>{{userInfo.nickName}}</view>
+            <view class='victory'>
+              <text class='h4'>总胜局</text>
+              <view class='count'>
+                <image src='{{imgPath}}/images/skin/rank/star.png' class='star'></image>
+                <text class='txt'>3188</text>
+              </view>
+            </view>
+          </view>
+          <view class='rank-item'>
+            <view class='sort-box'>
+              <text class='num'>9</text>
+            </view>
+            <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+            <view class='username'>{{userInfo.nickName}}</view>
+            <view class='victory'>
+              <text class='h4'>总胜局</text>
+              <view class='count'>
+                <image src='{{imgPath}}/images/skin/rank/star.png' class='star'></image>
+                <text class='txt'>3188</text>
+              </view>
+            </view>
+          </view>
+          <view class='rank-item'>
+            <view class='sort-box'>
+              <text class='num'>10</text>
+            </view>
+            <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+            <view class='username'>{{userInfo.nickName}}</view>
+            <view class='victory'>
+              <text class='h4'>总胜局</text>
+              <view class='count'>
+                <image src='{{imgPath}}/images/skin/rank/star.png' class='star'></image>
+                <text class='txt'>3188</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class='fixed'>
+    <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+    <view class='base-info'>
+      <view class='name'>{{userInfo.nickName}}</view>
+      <view class='msg'>您当前个人排名
+        <text>99</text>名</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "disableScroll":true,
+  "usingComponents": {
+    "dialog": "../../components/dialog/index",
+    "toast": "../../components/toast/index"
+  }
+}

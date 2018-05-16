@@ -1,0 +1,190 @@
+/* pages/rank/ranl.wxss */
+
+.container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.rank-box {
+  position: absolute;
+  top: 20rpx;
+  bottom: 0;
+  left: 20rpx;
+  right: 20rpx;
+  text-align: center;
+}
+
+.rank-box .top {
+  padding-top: 30rpx;
+  color: #fff;
+}
+
+.rank-box .top .title {
+  font-size: 48rpx;
+  line-height: 70rpx;
+  width: 290rpx;
+  margin: auto;
+}
+
+.rank-box .top .notice {
+  font-size: 24rpx;
+  opacity: 0.8;
+  line-height: 44rpx;
+}
+
+.tab-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.tab-nav .nav {
+  width: 50%;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 50rpx;
+  position: relative;
+}
+
+.tab-nav .nav.cur::after {
+  content: "";
+  width: 50rpx;
+  height: 4rpx;
+  border-radius: 2rpx;
+  background-color: #fff;
+  position: absolute;
+  bottom: -4rpx;
+  left: 50%;
+  margin-left: -25rpx;
+}
+
+.scroll-box {
+  position: absolute;
+  top: 282rpx;
+  bottom: 0;
+  width: 710rpx;
+}
+
+.scroll-box scroll-view {
+  height: 100%;
+}
+
+.scroll-box .rank-list {
+  padding: 0 20rpx;
+  width: 670rpx;
+}
+
+.scroll-box .rank-item {
+  display: flex;
+  margin-bottom: 20rpx;
+  height: 170rpx;
+  border-radius: 16rpx;
+  background-color: #e5f0ff;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-around; */
+  width: 100%;
+}
+
+.scroll-box .rank-item .sort-box {
+  width: 110rpx;
+  font-size: 0;
+}
+
+.scroll-box .rank-item .sort-box .num {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #487bf0;
+}
+
+.scroll-box .rank-item .sort {
+  width: 33rpx;
+  height: 52rpx;
+}
+
+.scroll-box .rank-item .avatar {
+  width: 116rpx;
+  height: 116rpx;
+  border: 7rpx solid #fff;
+  border-radius: 130rpx;
+}
+
+.scroll-box .rank-item .username {
+  margin-left: 20rpx;
+  margin-right: 60rpx;
+  width: 150rpx;
+  font-size: 30rpx;
+  color: #487bf0;
+  line-height: 36rpx;
+}
+
+.scroll-box .rank-item .star {
+  margin-right: 10rpx;
+  width: 32rpx;
+  height: 30rpx;
+}
+
+.scroll-box .rank-item .victory {
+  width: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-box .rank-item .victory .h4 {
+  font-size: 28rpx;
+  color: #487bf0;
+  line-height: 56rpx;
+}
+
+.scroll-box .rank-item .victory .count {
+  width: 180rpx;
+  font-size: 32rpx;
+  color: #fff;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #487bf0;
+  border-radius: 30rpx;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  background: #487af0;
+  height: 128rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.fixed .avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 70rpx;
+  margin-left: 40rpx;
+  margin-right: 30rpx;
+  
+}
+
+.fixed .base-info {
+  color: #fff;
+}
+
+.fixed .base-info .name {
+  font-size: 30rpx;
+  line-height: 46rpx;
+}
+.fixed .base-info .msg{
+  font-size:24rpx;
+  line-height: 40rpx;
+}
+.fixed .base-info .msg text{
+  color: #FFD800;
+}

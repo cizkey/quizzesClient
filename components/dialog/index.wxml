@@ -1,0 +1,11 @@
+<!--components/dialog/index.wxml-->
+<view class='dialog-wrap' wx:if='{{show}}'>
+  <view class='dialog-body'>
+    <view class='title' wx:if='{{title&&title!=""}}' style='background:url({{imgPath}}/images/skin/popup/header.png) center no-repeat;background-size:cover'>{{title}}</view>
+    <slot name="content"></slot>
+  </view>
+  <view class='dialog-close' bindtap='close'>
+    <image src='{{imgPath}}/images/skin/popup/close.png'></image>
+  </view>
+</view>
+<view class='dialog-mask' wx:if='{{show}}'></view>

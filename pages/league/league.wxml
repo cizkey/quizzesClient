@@ -1,0 +1,80 @@
+<!--pages/league/league.wxml-->
+<view class='container'>
+  <image src='{{imgPath}}/images/skin/league/league1.jpg' mode='widthFix'></image>
+  <image src='{{imgPath}}/images/skin/league/league2.jpg' mode='widthFix'></image>
+  <image src='{{imgPath}}/images/skin/league/league3.jpg' mode='widthFix'></image>
+  <image src='{{imgPath}}/images/skin/league/league4.jpg' mode='widthFix'></image>
+  <image src='{{imgPath}}/images/skin/league/league5.jpg' mode='widthFix'></image>
+  <view class='time'>活动时间：2018.06.01-2018.06.30</view>
+  <view class='rule active-rule'>
+    <view class='p'>1.活动时间：2018.06.01-2018.06.30</view>
+    <view class='p'>2.用户参与好友PK和答题竞技PK，胜局排名前100， 将获得丰厚奖励，还能和其他注会小伙伴们组建战队，一起上战队排行榜赢取万元大奖</view>
+    <view class='p'>3.与邀请的好友（新用户）一起PK，双方均答对3道题 时，都将获得1-20元随机金额红包
+    </view>
+    <view class='p'>4.本次联赛题目均采用CPA历年真题和高质量模拟题，边玩边刷题 还在等什么呢，干加入答题联赛吧！大奖在等着你！
+    </view>
+  </view>
+  <view class='person-prize prize-box'>
+    <view class='prize-item'>
+      <view class='rank'>1～10</view>
+      <view class='prize strong'>现金3000元</view>
+      <view class='num'>10名</view>
+    </view>
+    <view class='prize-item'>
+      <view class='rank'>11～20</view>
+      <view class='prize strong'>迷你行李箱</view>
+      <view class='num'>10名</view>
+    </view>
+
+    <view class='prize-item'>
+      <view class='rank'>21～30</view>
+      <view class='prize strong'>大型哈士奇公仔布娃娃</view>
+      <view class='num'>10名</view>
+    </view>
+    <view class='prize-item'>
+      <view class='rank'>31～40</view>
+      <view class='prize'>太阳伞</view>
+      <view class='num'>20名</view>
+    </view>
+    <view class='prize-item'>
+      <view class='rank'>41～50</view>
+      <view class='prize'>小狮子布娃娃</view>
+      <view class='num'>50名</view>
+    </view>
+  </view>
+  <view class='team-prize prize-box'>
+    <view class='prize-item'>
+      <view class='rank'>1～10</view>
+      <view class='prize strong'>5000元（团队）</view>
+      <view class='num'>10名</view>
+    </view>
+    <view class='prize-item'>
+      <view class='rank'>11～30</view>
+      <view class='prize strong'>移动电源（每人一个）</view>
+      <view class='num'>20名</view>
+    </view>
+
+    <view class='prize-item'>
+      <view class='rank'>31～50</view>
+      <view class='prize strong'>小狮子布娃娃(每人一个)</view>
+      <view class='num'>20名</view>
+    </view>
+    <view class='prize-item'>
+      <view class='rank'>51～100</view>
+      <view class='prize'>复古笔记本(每人一个）</view>
+      <view class='num'>50名</view>
+    </view>
+  </view>
+  <view class='rule receive-rule'>
+    <view class='p'>1.比赛结束后，我们将在第一时间公布参赛者名单，获 奖选手请在两个工作日内答复我们，超出时间未答复视 为自动放弃奖励
+    </view>
+    <view class='p'>2.所有参赛人员均可以加入官方活动群，免费领取【2018CPA复习重点总结资料】</view>
+    <view class='p'>3.如果出现恶意刷榜现象，将取消参赛资格，官方享有对本活动的最终解释权
+    </view>
+  </view>
+  <view class='join' style='background:url({{imgPath}}/images/skin/league/join.jpg) center no-repeat;background-size:100% 100%'>
+    <view class='btn'>
+      <navigator hover-class='none' open-type='navigate' url='/pages/datum/datum'>加入官方活动群</navigator>
+    </view>
+  </view>
+</view>

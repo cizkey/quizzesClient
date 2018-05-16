@@ -1,0 +1,141 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='home-contianer'>
+    <image src='{{imgPath}}/images/skin/rank/bac.png' mode='widthFix' style='height:188rpx;' class='light'></image>
+    <scroll-view scroll-y>
+      <view class='scroll-wrap'>
+
+        <view class='user-box' style='background:url({{imgPath}}/images/skin/home/bac.png) center no-repeat;background-size:cover'>
+          <button class='service' open-type='contact' style='background:url({{imgPath}}/images/skin/home/service.png) center no-repeat;background-size:cover'></button>
+          <button class='setting' style='background:url({{imgPath}}/images/skin/home/setting.png) center no-repeat;background-size:cover' bindtap='settingEvent'></button>
+          <view class='user-info user-norank' wx:if='{{!rank}}'>
+            <image src='{{userInfo.avatarUrl||imgPath+"/images/skin/match/img_friendmatch_opponent.png"}}' mode='widthFix' class='user-icon'></image>
+            <view class='user-name'>{{userInfo.nickName}}</view>
+          </view>
+          <view class='user-info user-rank' wx:if='{{rank}}'>
+            <view class='base-info'>
+              <image src='{{userInfo.avatarUrl||imgPath+"/images/skin/match/img_friendmatch_opponent.png"}}' mode='widthFix' class='user-icon'></image>
+              <view class='right'>
+                <view class='user-name'>{{userInfo.nickName}}</view>
+                <view class='rank'>当前未上榜</view>
+              </view>
+
+            </view>
+            <view class='fight-info'>
+              <view class='item'>
+                <view class='num'>145</view>
+                <view class='label'>对局次数</view>
+              </view>
+              <view class='item'>
+                <view class='num'>100</view>
+                <view class='label'>胜局</view>
+              </view>
+              <view class='item'>
+                <view class='num'>7</view>
+                <view class='label'>最高连胜</view>
+              </view>
+              <view class='item'>
+                <view class='num'>40%</view>
+                <view class='label'>胜率</view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class='ad-box' style='background:url({{imgPath}}/images/skin/home/banner.png) center no-repeat;background-size:cover'>
+          <navigator hover-class='none' url='/pages/league/league' open-type='navigate'>
+            <view class='h2'>CPA答题联赛</view>
+            <view class='desc'>百万奖励放送 题目采用CPA真题和模拟题</view>
+          </navigator>
+        </view>
+        <view class='nav-box'>
+          <view class='nav-left wrap'>
+            <view class='nav'>
+              <navigator hover-class='none' url='/pages/battle/battle?type=0' open-type='navigate'>
+                <view class='info'>
+                  <view class='h2'>欢乐答题</view>
+                  <view class='desc'>93784考友在PK上榜</view>
+                </view>
+                <image src='{{imgPath}}/images/skin/home/fight.png' style='height:360rpx;'></image>
+              </navigator>
+            </view>
+            <view class='nav'>
+              <navigator hover-class='none' url='/pages/joincpa/index' open-type='navigate'>
+                <view class='info'>
+                  <view class='h2' style='width:220rpx;margin:auto'>加入CPA学习小组</view>
+                </view>
+                <image src='{{imgPath}}/images/skin/home/group.png' style='height:200rpx;'></image>
+              </navigator>
+            </view>
+            <view class='nav'>
+              <navigator hover-class='none' url='/pages/history/index' open-type='navigate'>
+                <view class='info'>
+                  <view class='h2'>看错题</view>
+                </view>
+                <image src='{{imgPath}}/images/skin/home/wx.png' style='height:200rpx;'></image>
+              </navigator>
+            </view>
+          </view>
+          <view class='nav-right wrap'>
+            <view class='nav'>
+              <navigator hover-class='none' url='/pages/battle/battle?type=1' open-type='navigate'>
+                <view class='info' style='text-align:left'>
+                  <view class='h2'>好友PK</view>
+                  <view class='desc'>邀请好友PK 领答题红包</view>
+                </view>
+                <image src='{{imgPath}}/images/skin/home/match.png' style='height:240rpx;'></image>
+              </navigator>
+            </view>
+            <view class='nav'>
+              <navigator hover-class='none' url='/pages/squadron/squadron' open-type='navigate'>
+                <view class='info' style='text-align:left'>
+                  <view class='h2'>我的战队</view>
+                  <view class='desc'>组建战队一起赢万元大奖</view>
+                </view>
+                <image src='{{imgPath}}/images/skin/home/team.png' style='height:200rpx;'></image>
+              </navigator>
+            </view>
+            <view class='nav'>
+              <navigator hover-class='none' url='/pages/rank/rank' open-type='navigate'>
+                <view class='info'>
+                  <view class='h2'>排行榜</view>
+                  <view class='desc'>恭喜您们都没有我厉害战队位居第一名</view>
+                </view>
+                <image src='{{imgPath}}/images/skin/home/rank.png' style='height:320rpx;'></image>
+              </navigator>
+            </view>
+          </view>
+        </view>
+        <view class='copyright'>
+          <image src='{{imgPath}}/images/skin/home/logo.png'></image>
+          <view>版权所有@2018映课</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='red-package slideIn{{phone}}'>
+    <navigator hover-class='none' open-type='navigate' url='{{phone===0?"/pages/packet/packet":"/pages/packetWithdraw/index"}}'>
+      <image src='{{imgPath}}/images/skin/home/angle.png' class='angle'></image>
+      <image src='{{imgPath}}/images/skin/home/red0.png' class='red red0' wx:if='{{phone===0}}'></image>
+      <image src='{{imgPath}}/images/skin/home/red1.png' class='red red1' wx:if='{{phone===1}}'></image>
+    </navigator>
+  </view>
+</view>
+<dialog wx:if='{{dialogType==="join"}}'>
+  <view slot="content" class='dialog-content'>
+    <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+    <view class='notice'>和我一起组建CPA战队</view>
+    <view class='notice'>我和大奖的距离就差你啦！</view>
+    <button class='btn btn-agree' bindtap='agreeJoin'>同意加入</button>
+    <button class='btn btn-refuse' bindtap='refuseJoin'>拒绝加入</button>
+  </view>
+</dialog>
+<dialog title='设置' wx:elif='{{dialogType==="setting"}}'>
+  <view slot="content" class='dialog-content'>
+    <view class='switch-box'>
+      <image src='{{imgPath}}/images/skin/home/audio.png' class='icon'></image>
+      <switch bindchange="switchChange" checked='checked' color='#487bf0' />
+    </view>
+  </view>
+</dialog>
+<toast></toast>

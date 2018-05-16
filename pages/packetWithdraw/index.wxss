@@ -1,0 +1,139 @@
+/*清除浮动*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+page {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .bg-blue {
+  width: 750rpx;
+  height: 250rpx;
+}
+
+.wrapper .bg-blue image {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .card {
+  width: 670rpx;
+  height: 280rpx;
+  background: #fff;
+  border-radius: 12rpx;
+  box-shadow: 5rpx 5rpx 25rpx #e1e9fe;
+  position: absolute;
+  left: 50%;
+  margin-left: -335rpx;
+  top: 20rpx;
+  box-sizing: border-box;
+  padding: 20rpx 35rpx;
+}
+
+.wrapper .card .common-list image {
+  width: 29rpx;
+  height: 31rpx;
+  vertical-align: middle;
+  margin-right: 22rpx;
+}
+
+.wrapper .card .common-list text {
+  font-size: 24rpx;
+  color: #707070;
+  display: inline-block;
+  vertical-align: middle;
+  height: 30rpx;
+  line-height: 26rpx;
+}
+
+.wrapper .card .common-list .edi {
+  width: 120rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  color: #fff;
+  font-size: 24rpx;
+  background: #487bf0;
+  border-radius: 30rpx;
+  margin-top: 9rpx;
+}
+
+.wrapper .card .common-list .phone,
+.wrapper .card .common-list .wechat {
+  margin-left: 30rpx;
+}
+
+.wrapper .card .packet-num {
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #ffb409;
+  font-weight: bold;
+  font-size: 60rpx;
+}
+
+.wrapper .tx {
+  width: 590rpx;
+  height: 90rpx;
+  margin: 110rpx auto 60rpx;
+}
+
+.wrapper .tx image {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .tips {
+  color: #999999;
+  margin-bottom: 30rpx;
+}
+
+.wrapper .tips .h4 {
+  font-size: 30rpx;
+  font-weight: bold;
+  text-indent: 50rpx;
+  margin-bottom: 30rpx;
+}
+
+.wrapper .tips .tips-item {
+  font-size: 24rpx;
+  width: 610rpx;
+  margin: 0 auto;
+  margin-bottom: 16rpx;
+  line-height: 30rpx;
+  position: relative;
+}
+
+.wrapper .tips .tips-item:before {
+  display: block;
+  content: '';
+  width: 8rpx;
+  height: 8rpx;
+  background: #999;
+  border-radius: 50%;
+  position: absolute;
+  left: -20rpx;
+  top: 12rpx;
+}

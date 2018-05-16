@@ -1,0 +1,119 @@
+<view class="wrapper">
+    <view class="zd">
+        <view class="header-img" bindtap="changeImage">
+            <image src="{{headerImage}}"></image>
+        </view>
+        <view class="zd-info">
+            <view class="info-content clearfix">
+                <view class="zd-name fl">我是队名 ，默认为队长的名字</view>
+                <view class="zd-editor fr" bindtap="editorName">修改</view>
+            </view>
+            <view class="zd-id">战队ID：190201</view>
+        </view>
+        <view class="match-info clearfix">
+            <view class="match-info-list fl">战队排行：<text class="point">100</text></view>
+            <view class="match-info-list fl">战队剩局：<text class="point">100场</text></view>
+            <view class="match-info-list fl">创建时间：2018/9/20</view>
+        </view>
+        <view class="zd-member">战队成员最多10名</view>
+        <scroll-view class="member-ul" scroll-y >
+            <view class="member-list">
+                <view class="member-list-header">
+                    <view class="member-list-header-in">
+                        <image src="{{imgPath}}/images/skin/squadron/header.png"></image>
+                    </view>
+                    <view class="member-list-name">XXXXXX</view>
+                </view>
+                <view class="member-list-content clearfix">
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                </view>
+                <view class="member-list-rank captain">队长</view>
+            </view>
+            <view class="member-list">
+                <view class="member-list-header">
+                    <view class="member-list-header-in">
+                        <image src="{{imgPath}}/images/skin/squadron/header.png"></image>
+                    </view>
+                    <view class="member-list-name">XXXXXX</view>
+                </view>
+                <view class="member-list-content clearfix">
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                </view>
+                <view class="member-list-rank crew">成员</view>
+            </view>
+            <view class="member-list">
+                <view class="member-list-header">
+                    <view class="member-list-header-in">
+                        <image src="{{imgPath}}/images/skin/squadron/header.png"></image>
+                    </view>
+                    <view class="member-list-name">XXXXXX</view>
+                </view>
+                <view class="member-list-content clearfix">
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                </view>
+                <view class="member-list-rank crew">成员</view>
+            </view>
+            <view class="member-list">
+                <view class="member-list-header">
+                    <view class="member-list-header-in">
+                        <image src="{{imgPath}}/images/skin/squadron/header.png"></image>
+                    </view>
+                    <view class="member-list-name">XXXXXX</view>
+                </view>
+                <view class="member-list-content clearfix">
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                </view>
+                <view class="member-list-rank crew">成员</view>
+            </view>
+            <view class="member-list">
+                <view class="member-list-header">
+                    <view class="member-list-header-in">
+                        <image src="{{imgPath}}/images/skin/squadron/header.png"></image>
+                    </view>
+                    <view class="member-list-name">XXXXXX</view>
+                </view>
+                <view class="member-list-content clearfix">
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                    <view class="member-content-item">总对局:145</view>
+                </view>
+                <view class="member-list-rank crew">成员</view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="fixed-bottom">
+        <button open-type="share" class="invite-friend">邀请好友加入</button>
+    </view>
+    <view class="pop-wrapper {{popBok?'show':''}}">
+        <view class="pop">
+            <view class="pop-header">
+                <text>修改战队名称</text>
+                <image src="{{imgPath}}/images/skin/squadron/pop-header.png"></image>
+            </view>
+            <view class="pop-body">
+                <view class="captain-name">当前队名</view>
+                <view class="captain-name-in">我是队名，默认为队长的名字是队名</view>
+                <form bindsubmit="formSubmit">
+                    <view class="name-input">
+                        <input name="captain" type="text" placeholder="请输入新队名" maxlength="12" />
+                    </view>
+                    <button formType="submit" class="submit">提交</button>
+                </form>
+            </view>
+        </view>
+        <view class="close" bindtap="closePop"><image src="{{imgPath}}/images/skin/packet/close.png"></image></view>
+    </view>
+</view>

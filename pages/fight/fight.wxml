@@ -1,0 +1,177 @@
+<!--pages/rank/rank.wxml-->
+<import src="../../libs/wxParse/wxParse.wxml" />
+
+<view class='container  {{answerAnimate?"shake":""}}'>
+  <view class='shake-mask' wx:if='{{answerAnimate}}'></view>
+  <view class='match-box' wx:if='{{matchStatus===0 || matchStatus===6}}'>
+    <view class='waiting' wx:if='{{matchCode===1}}'>
+      <view class='tip'>等待好友入场</view>
+      <view class='count-down'>{{matchCountFormat}}</view>
+    </view>
+    <view class='matching'>
+      <image src='{{userInfo.avatarUrl}}' class='user-icon'></image>
+      <image src='{{imgPath}}/images/skin/match/inside_ring.png' class='inside'></image>
+      <image src='{{imgPath}}/images/skin/match/center_ring.png' class='center'></image>
+      <image src='{{imgPath}}/images/skin/match/outside_ring.png' class='outside' wx:if='{{matchCode===0}}'></image>
+      <image src='{{imgPath}}/images/skin/match/wait_ring.png' class='wait' wx:if='{{matchCode===1}}'></image>
+    </view>
+    <view class='random-pk action' wx:if='{{matchCode===0}}'>
+      <view class='msg'>正在为您匹配合适的对手</view>
+      <button class='btn-giveUp' bindtap='giveUpPk'>放弃</button>
+    </view>
+    <view class='friend-pk action' wx:if='{{matchCode===1}}'>
+      <button class='btn-random' bindtap='randomMatch'>不等了，随机匹配</button>
+      <button class='btn-share' open-type='share'>邀请其他好友</button>
+    </view>
+  </view>
+  <view class='pk-start' wx:elif='{{matchStatus===1}}' style='background:url({{imgPath}}/images/skin/match/match_bg.png) center no-repeat;background-size:100% 100%;'>
+    <view class='sponsor'>
+      <image src='{{imgPath}}/images/skin/match/sponsor.png' class='bg'></image>
+      <image src='{{userInfo.avatarUrl}}' class='user-icon'></image>
+      <view class='user-name'>{{userInfo.nickName}}</view>
+    </view>
+
+    <view class='challenger'>
+      <image src='{{imgPath}}/images/skin/match/challenger.png' class='bg'></image>
+      <image src='{{userInfo.avatarUrl}}' class='user-icon'></image>
+      <view class='user-name'>{{userInfo.nickName}}</view>
+    </view>
+    <image src='{{imgPath}}/images/skin/match/pk.png' class='pk-img'></image>
+  </view>
+  <view class='pk-box' wx:elif='{{matchStatus===2||matchStatus===3}}'>
+    <view class='subject-title' style='background:url({{imgPath}}/images/skin/match/title.png) center no-repeat;background-size:100% 100%;' wx:if='{{matchStatus===3}}'>第一题</view>
+    <view class='pk-people'>
+      <view class='left-box'>
+        <view class='icon'>
+          <view class='bg'></view>
+          <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+        </view>
+        <view class='info'>
+          <view class='name'>{{userInfo.nickName}}</view>
+          <view class='progress'>
+            <view class='bar' style='width:30%'></view>
+          </view>
+        </view>
+      </view>
+      <view class='right-box'>
+        <view class='info'>
+          <view class='name'>{{userInfo.nickName}}</view>
+          <view class='progress'>
+            <view class='bar' style='width:30%'></view>
+          </view>
+        </view>
+        <view class='icon'>
+          <view class='bg'></view>
+          <image src='{{userInfo.avatarUrl}}' class='avatar'></image>
+        </view>
+      </view>
+    </view>
+    <view class='subject-container {{matchStatus===3?"fadeIn":""}}'>
+      <view class='canvas-box'>
+        <view class='circle-box'>
+          <view class='circle-left'>
+            <!-- <view class='ring' style='{{subjectStatus==0?"transform: rotateZ(0);transition: all 0.3s linear;":subjectStatus==1?"":"transform: rotateZ("+((subjectTotalTime-subjectCount)/subjectTotalTime*360-180>0?)+"deg)":""}}'></view> -->
+            <view class='ring' style='{{leftCircleAnimate}}'></view>
+          </view>
+          <view class='circle-right'>
+            <!-- <view class='ring' style='{{subjectStatus==0?"transform: rotateZ(0);transition: all 0.3s linear 0.3s;":subjectStatus==1?"transform: rotateZ("+((subjectTotalTime-subjectCount)/subjectTotalTime*360)+"deg)":""}}' ></view> -->
+            <view class='ring' style='{{rightCircleAnimate}}'></view>
+          </view>
+         
+        </view>
+         <view class='mask'>{{subjectCount}}</view>
+        <!-- <canvas class="cir" style="width:132rpx; height:132rpx;" canvas-id="canvasArc"> </canvas> -->
+      </view>
+      <view class='subject-box'>
+        <scroll-view scroll-y>
+          <view class='layout'>
+            <view class='subject-question'>
+              <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+            </view>
+            <view class='subject-answer {{matchStatus===3?"bounceIn":""}}'>
+              <view class='answer-item correct '>
+                <image class='icon me show' src='{{imgPath}}/images/skin/match/correct.png'></image>
+                <image class='icon me' src='{{imgPath}}/images/skin/match/error.png'></image>
+                <image class='icon from show' src='{{imgPath}}/images/skin/match/correct.png'></image>
+                <image class='icon from' src='{{imgPath}}/images/skin/match/error.png'></image>
+                <text>N一定也带正电</text>
+              </view>
+              <view class='answer-item error'>
+                <image class='icon me' src='{{imgPath}}/images/skin/match/correct.png'></image>
+                <image class='icon me show' src='{{imgPath}}/images/skin/match/error.png'></image>
+                <image class='icon from' src='{{imgPath}}/images/skin/match/correct.png'></image>
+                <image class='icon from show' src='{{imgPath}}/images/skin/match/error.png'></image>
+                <text>a的电势低于b的电势</text>
+              </view>
+              <view class='answer-item'>
+                <image class='icon me' src='{{imgPath}}/images/skin/match/correct.png'></image>
+                <image class='icon me' src='{{imgPath}}/images/skin/match/error.png'></image>
+                <image class='icon from' src='{{imgPath}}/images/skin/match/correct.png'></image>
+                <image class='icon from' src='{{imgPath}}/images/skin/match/error.png'></image>
+                <text>带电粒子N的动能势能减小，电势能增大</text>
+              </view>
+              <view class='answer-item'>
+                <image class='icon me' src='{{imgPath}}/images/skin/match/correct.png'></image>
+                <image class='icon me' src='{{imgPath}}/images/skin/match/error.png'></image>
+                <image class='icon from' src='{{imgPath}}/images/skin/match/correct.png'></image>
+                <image class='icon from' src='{{imgPath}}/images/skin/match/error.png'></image>
+                <text>带电粒子N的动能势能减小，电势能增大带电粒子N的动能势能减小，电势能增大带电粒子N的动能势能减小，电势能增大</text>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+  <view class='result-box' wx:elif='{{matchStatus===4}}'>
+    <view class='red-package'>
+      <image src='{{imgPath}}/images/skin/match/package.png' class='package'></image>
+      <view class='tip'>补充手机号开启现金红包功能</view>
+    </view>
+    <view class='people'>
+      <view class='left'>
+        <image src='{{userInfo.avatarUrl}}' class='people-icon'></image>
+        <view class='name'>{{userInfo.nickName}}</view>
+        <view class='count'>答对3题</view>
+      </view>
+      <view class='right'>
+        <image src='{{userInfo.avatarUrl}}' class='people-icon'></image>
+        <view class='name'>{{userInfo.nickName}}</view>
+        <view class='count'>答对3题</view>
+      </view>
+    </view>
+    <view class='result-show'>
+      <view class='pic'>
+        <image src='{{imgPath}}/images/skin/match/{{pkResult}}_piece.png' class='piece'></image>
+        <image src='{{imgPath}}/images/skin/match/{{pkResult}}_light.png' class='light'></image>
+        <image src='{{imgPath}}/images/skin/match/{{pkResult}}_cup.png' class='cup'></image>
+      </view>
+      <view class='suc-info' wx:if='{{pkResult=="suc"}}'>
+        <view class='win'>
+          <image src='{{imgPath}}/images/skin/match/gold.png' class='gold'></image>
+          <text>胜局+1</text>
+        </view>
+        <view class='line'>
+          <image src='{{imgPath}}/images/skin/match/line.png'></image>
+        </view>
+      </view>
+      <view class='fail-info' wx:if='{{pkResult=="fail"}}'>
+        <view class='analysis'>您在【企业所得税法律制度】等知识点存在遗漏，我们已为您精心准备了强化资料。</view>
+        <view class='btn'>
+          <view class='inside' style='background-color: #0739ac;'></view>
+          <button class='outside' style='background:#194fcb;color:#fff'>领取资料</button>
+        </view>
+      </view>
+    </view>
+    <view class='action'>
+      <view class='btn'>
+        <view class='inside'></view>
+        <button class='outside' style='background:linear-gradient(to bottom, #ffffff, #c8d9ff)'>继续挑战</button>
+      </view>
+      <view class='btn' style='margin-left:15rpx'>
+        <view class='inside'></view>
+        <button class='outside' style='background:linear-gradient(to bottom, #ffd800, #ffb10a)' open-type='share'>炫耀战绩</button>
+      </view>
+    </view>
+  </view>
+</view>

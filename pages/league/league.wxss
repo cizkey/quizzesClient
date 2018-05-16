@@ -1,0 +1,126 @@
+/* pages/league/league.wxss */
+
+/* page{
+  background: #fff;
+} */
+
+.container {
+  /* background: #fff; */
+  font-size: 0;
+  position: relative;
+}
+
+.container image {
+  width: 100%;
+}
+
+.time {
+  position: absolute;
+  top: 360rpx;
+  left: 30rpx;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  color: #fff;
+}
+
+.active-rule {
+  top: 624rpx;
+  height: 479rpx;
+}
+
+.receive-rule {
+  top: 2340rpx;
+  height: 400rpx;
+}
+
+.rule {
+  position: absolute;
+  left: 40rpx;
+  width: 670rpx;
+  font-size: 24rpx;
+  color: #fff;
+  line-height: 36rpx;
+  padding: 34rpx 40rpx;
+  box-sizing: border-box;
+}
+
+.rule .p {
+  margin-top: 44rpx;
+}
+
+.rule .p:first-child {
+  margin-top: 0;
+}
+
+.person-prize {
+  top: 1370rpx;
+  height: 320rpx;
+}
+
+.team-prize {
+  top: 1937rpx;
+  height: 260rpx;
+}
+
+.prize-box {
+  position: absolute;
+  width: 630rpx;
+  left: 60rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #487bf0;
+  padding: 20rpx 60rpx;
+  box-sizing: border-box;
+}
+
+.prize-box .prize-item {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.prize-box .prize-item:first-child {
+  margin-top: 0;
+}
+
+.prize-box .prize-item .prize {
+  max-width: 300rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+.prize-box .prize-item .strong {
+  color: #f46389;
+}
+
+.prize-box .prize-item .rank, .prize-box .prize-item .num {
+  width: 100rpx;
+}
+
+/* .prize-box */
+
+.join {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  width: 100%;
+  padding-top: 52rpx;
+  height: 98rpx;
+}
+
+.join .btn {
+  width: 480rpx;
+  height: 98rpx;
+  font-size: 42rpx;
+  font-weight: 600;
+  line-height: 98rpx;
+  text-align: center;
+  border-radius: 49rpx;
+  color: #d92a58;
+  background-image: linear-gradient(183deg, #ffd800, #ffb20a);
+  margin: auto;
+}

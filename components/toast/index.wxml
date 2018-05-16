@@ -1,0 +1,14 @@
+<!--components/toast/index.wxml-->
+<view class="wetoast {{toastParam.reveal ? 'wetoast_show' : ''}}">
+		<view class="wetoast__mask"></view>
+		<view class="wetoast__bd" animation="{{toastParam.animationData}}">
+			<block wx:if="{{toastParam.img}}">
+				<view class="wetoast__bd__img {{toastParam.imgClassName || ''}}">
+					<image class="wetoast__bd__img_desc" src="{{toastParam.img}}" mode="{{toastParam.imgMode || 'scaleToFill'}}"></image>
+				</view>
+			</block>
+			<block wx:if="{{toastParam.title}}">
+				<view class="wetoast__bd__title {{toastParam.titleClassName || ''}}">{{toastParam.title}}</view>
+			</block>
+		</view>
+	</view>
